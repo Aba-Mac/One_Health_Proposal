@@ -1,0 +1,24 @@
+,Keyword,System,Sub-type,qid,label,description
+0,Aedes albopictus,Aedes-borne disease system,Aedes,Q477918,Asian tiger mosquito,species of insect
+1,Aedes mosquito,Aedes-borne disease system,Aedes,Q477918,Asian tiger mosquito,species of insect
+2,Asian tiger mosquito,Aedes-borne disease system,Aedes,Q477918,Asian tiger mosquito,species of insect
+3,Tiger mosquito,Aedes-borne disease system,Aedes,Q477918,Asian tiger mosquito,species of insect
+4,Zika,Aedes-borne disease system,Zika,Q8071861,Zika fever,infectious arboviral disease
+5,Zika virus,Aedes-borne disease system,Zika,Q202864,Zika virus,species of virus
+6,Zika fever,Aedes-borne disease system,Zika,Q8071861,Zika fever,infectious arboviral disease
+7,Dengue,Aedes-borne disease system,Dengue,Q30953,dengue fever,"tropical disease caused by the dengue virus, transmitted by mosquito"
+8,Dengue fever,Aedes-borne disease system,Dengue,Q30953,dengue fever,"tropical disease caused by the dengue virus, transmitted by mosquito"
+9,Breakbone fever,Aedes-borne disease system,Dengue,Q30953,dengue fever,"tropical disease caused by the dengue virus, transmitted by mosquito"
+10,Break-bone fever,Aedes-borne disease system,Dengue,Q30953,dengue fever,"tropical disease caused by the dengue virus, transmitted by mosquito"
+11,Break bone fever,Aedes-borne disease system,Dengue,Q30953,dengue fever,"tropical disease caused by the dengue virus, transmitted by mosquito"
+12,Chikungunya,Aedes-borne disease system,Chikungunya,Q243257,chikungunya,infection caused by the chikungunya virus
+13,Chikungunya virus,Aedes-borne disease system,Chikungunya,Q15794049,Chikungunya virus,virus that causes the Chikungunya fever
+14,West Nile virus,Culex-borne disease system,West Nile,Q158856,West Nile virus,species of virus
+15,West Nile fever,Culex-borne disease system,West Nile,Q11627066,West Nile fever,human disease
+16,West Nile disease,Culex-borne disease system,West Nile,Q11627066,West Nile fever,human disease
+17,Culex pipiens,Culex-borne disease system,Culex,Q27958,Culex pipiens,species of mosquito
+18,Common house mosquito,Culex-borne disease system,Culex,Q27958,Culex pipiens,species of mosquito
+19,Culex mosquito,Culex-borne disease system,Culex,Q27958,Culex pipiens,species of mosquito
+20,Usutu virus,Culex-borne disease system,Usutu,Q2502726,Usutu virus,species of virus
+21,Culex torrentium,Culex-borne disease system,Culex,Q13855063,Culex torrentium,species of insect
+22,Culex modestus,Culex-borne disease system,Culex,Q3007097,Culex modestus,species of mosquito

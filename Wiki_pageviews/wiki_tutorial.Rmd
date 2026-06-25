@@ -1,0 +1,169 @@
+---
+title: "What kind of bear is best?"
+output: html_notebook
+---
+
+# Set up
+
+Install packages
+```{r, eval = FALSE}
+install.packages("wikitaxa")
+install.packages("wikipediatrend")
+install.packages("magrittr")
+install.packages("pbapply")
+```
+
+Load packages
+```{r}
+library(magrittr)
+```
+
+# Find all wikispecies entries that mention "Ursidae"
+```{r}
+all_bears <-
+  wikitaxa::wt_wikispecies_search("Ursidae", limit = 10000) # The maximum number is 10k
+
+all_bears$query$search$title %>% sort
+```
+
+# Find wikidata IDs
+```{r}
+wiki_id <- 
+  pbapply::pbsapply(all_bears$query$search$title, 
+                    wikitaxa::wt_data_id)
+
+wiki_id
+```
+
+# Get page metadata to filter only bears
+```{r, eval = FALSE}
+wiki_details_bears <- 
+  pbapply::pblapply(X = wiki_id, 
+                    FUN = function(id){
+                      id_details <- wikitaxa::wt_data(id)
+                      id_details$id <- id
+                      id_details
+                    })
+
+saveRDS(wiki_details_bears, "wiki_details_bears.rds")
+```
+
+# Check page metadata
+```{r}
+wiki_details_bears <- readRDS("wiki_details_bears.rds")
+
+wiki_details_bears$Ursidae$labels
+wiki_details_bears$Ursidae$aliases
+View(wiki_details_bears$Ursidae$claims)
+```
+
+# Filter only pages that are taxons
+```{r}
+is_taxon <- 
+  sapply(wiki_details_bears, 
+         FUN = function(taxon){
+           
+           "taxon name" %in% taxon$claims$property_value
+           
+         })
+
+is_sp <- 
+  sapply(wiki_details_bears, 
+         FUN = function(taxon){
+           
+           which_rank <- 
+             taxon$claims$property_value == "taxon rank"
+           
+           if(any(which_rank)){
+             
+             taxon$claims$value[which_rank] == 7432
+             
+           } else { FALSE }
+           
+         })
+
+is_iucn <- 
+  sapply(wiki_details_bears, 
+         FUN = function(taxon){
+           
+           "IUCN taxon ID" %in% taxon$claims$property_value
+           
+         })
+
+wiki_details_bears_clean <- wiki_details_bears[is_taxon & is_sp & is_iucn]
+```
+
+# Download wiki pageviews
+```{r, eval = FALSE}
+wiki_trend_bears <-
+  pbapply::pblapply(X = wiki_details_bears_clean, 
+                    FUN = function(sp){
+                      id_trends <-
+                        lapply(1:length(sp$labels$value), function(i){
+                          try(
+                            wikipediatrend::wp_trend(page = sp$labels$value[i], 
+                                                     lang = sp$labels$language[i],
+                                                     from = "2010-01-01",
+                                                     to = "2023-05-31",
+                                                     warn = FALSE), silent = TRUE)
+                        })
+                      
+                      id_trends
+                    })
+
+saveRDS(wiki_trend_bears, "wiki_trend_bears.rds")
+```
+
+```{r}
+wiki_trend_bears <- readRDS("wiki_trend_bears.rds")
+```
+
+# Examples of outputs
+
+Normal
+```{r}
+wiki_trend_bears$`Melursus ursinus`[[1]]
+```
+
+Empty
+```{r}
+wiki_trend_bears$`Melursus ursinus`[[2]]
+```
+
+Error
+```{r}
+wiki_trend_bears$`Melursus ursinus`[[7]]
+```
+
+# Filter out errors
+```{r}
+wiki_trend_bears_clean <-
+  lapply(wiki_trend_bears, function(sp) {
+    
+    is_df <-
+    sapply(sp, function(lang){
+      
+      if(any(class(lang) == "data.frame")){
+        nrow(lang) > 0
+      } else FALSE
+      
+    })
+    
+    sp[is_df]
+    
+  })
+
+saveRDS(wiki_trend_bears_clean, "wiki_trend_bears_clean.rds")
+```
+
+# Sum pageviews
+```{r}
+total_page_views <-
+  sapply(wiki_trend_bears_clean, function(sp){
+    
+    sum(do.call(rbind, sp)$views)
+    
+  })
+
+sort(total_page_views, decreasing = TRUE)
+```
