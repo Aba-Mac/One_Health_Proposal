@@ -6,7 +6,7 @@ Fetches anchor-normalised interest-over-time via trendspy for 6 countries.
 
 Output
 ------
-  trends_raw_data.csv    — normalised monthly values per keyword / country
+  trends_keywords.csv    — monthly values per keyword / country
   trends_anchors.csv     — raw anchor keyword values per country
 
 Usage
@@ -28,9 +28,9 @@ from trendspy import Trends
 # CONFIGURATION  — edit these before running
 # ─────────────────────────────────────────────────────────────────────────────
 
-CSV_PATH  = r"C:\Users\annab\Documents\Work\2026_Senckenberg_Freelance\One_Health_Proposal_Eugenia\Google_trends\Google_dataset.csv"
-ENCODING  = "cp1252"                  # Windows-1252 encoding
-TIMEFRAME = "2010-01-01 2025-12-31"   # monthly data for spans > 5 yrs
+CSV_PATH  = r"C:\Users\annab\Documents\Work\2026_Senckenberg_Freelance\One_Health_Proposal_Eugenia\Datasets\Keywords.csv"
+ENCODING  = "cp1252"
+TIMEFRAME = "2010-01-01 2025-12-31"
 
 # One high-frequency anchor term per country (used for cross-batch normalisation).
 # Choose a word that is consistently popular so that the anchor signal is stable.
@@ -129,9 +129,6 @@ def fetch_batch(
 ) -> pd.DataFrame | None:
     """
     Fetch one batch of ≤ BATCH_SIZE keywords + the anchor term.
-
-    BUG FIX: deduplicate kw_list so that if the anchor string already
-    appears in `keywords` we don't send it twice (which causes an API error).
     """
     kw_list = list(dict.fromkeys(keywords + [anchor]))  # anchor always last
     wait = MIN_SLEEP
@@ -164,23 +161,16 @@ def fetch_country(
     keywords: list[str],
     anchor: str,
     timeframe: str,
-) -> tuple[pd.DataFrame, pd.Series]:
+) -> tuple[pd.DataFrame, pd.DataFrame]:
     """
     Fetch all keyword batches for one country.
 
     Returns
     -------
-    (normalised_keyword_df, anchor_series)
-        normalised_keyword_df  — anchor-normalised interest, keywords as columns
+    (keyword_df, anchor_series)
+        keyword_df  — anchor-normalised interest, keywords as columns
         anchor_series          — mean raw anchor values across all batches
                                  (useful for diagnosing normalisation quality)
-
-    BUG FIXES applied here
-    ----------------------
-    * Empty-frames guard: return early with typed empties instead of crashing
-      on pd.concat([]).
-    * anchor_data renamed to anchor_series_list to avoid shadowing outer scope.
-    * Redundant _sleep() on None removed; the retry back-off already handles it.
     """
     frames: list[pd.DataFrame] = []
     anchor_series_list: list[pd.Series] = []
@@ -202,32 +192,30 @@ def fetch_country(
         if "isPartial" in df.columns:
             df = df.drop(columns=["isPartial"])
 
-        # Anchor normalisation: divide each keyword by the anchor value,
-        # then scale so anchor = 100. Replace 0 with NaN to avoid div-by-zero.
-        anchor_col = df[anchor].replace(0, float("nan"))
-        anchor_series_list.append(anchor_col)
+        # Anchor is included in every batch, so Google Trends has already
+        # put the keywords and anchor on the same 0–100 scale.
+        anchor_series = df[anchor].copy()
+        anchor_series.name = f"batch_{i // BATCH_SIZE + 1}"
+        anchor_series_list.append(anchor_series)
 
-        for kw in batch:
-            if kw in df.columns:
-                df[kw] = df[kw] / anchor_col * 100
-
-        frames.append(df.drop(columns=[anchor], errors="ignore"))
+        batch_num = i // BATCH_SIZE + 1
+        keyword_df = df.drop(columns=[anchor], errors="ignore")
+        keyword_df = keyword_df.rename(columns=lambda c: f"{c}::batch_{batch_num}")
+        frames.append(keyword_df)
         _sleep()  # polite pause between batches
 
     # Guard: nothing was collected
     if not frames:
         log.warning("No data collected for %s", geo)
-        return pd.DataFrame(), pd.Series(name=anchor, dtype=float)
+        return (pd.DataFrame(), pd.DataFrame())
 
     result = pd.concat(frames, axis=1)
     result.index = pd.to_datetime(result.index)
 
-    # Average anchor values across all batches (it appears in every batch)
-    anchor_mean = pd.concat(anchor_series_list, axis=1).mean(axis=1)
-    anchor_mean.index = pd.to_datetime(anchor_mean.index)
-    anchor_mean.name = anchor
+    anchor_df = pd.concat(anchor_series_list, axis=1)
+    anchor_df.index = pd.to_datetime(anchor_df.index)
 
-    return result.sort_index(), anchor_mean.sort_index()
+    return result.sort_index(), anchor_df.sort_index()
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -245,7 +233,7 @@ def main() -> None:
     tr = Trends(request_delay=6.0)
 
     country_data: dict[str, pd.DataFrame] = {}
-    anchor_data:  dict[str, pd.Series]    = {}
+    anchor_data: dict[str, pd.DataFrame] = {}
 
     for geo, keywords in country_kws.items():
         anchor = ANCHOR_PER_COUNTRY[geo]
@@ -265,18 +253,24 @@ def main() -> None:
         log.error("No data collected for any country. Check your API access and retry.")
         return
 
-    # 4. Save anchor series
-    # BUG FIX: build anchor DataFrame from the dict directly so that
-    # column count always matches, even if some countries failed.
-    anchor_df = pd.DataFrame(anchor_data)
-    anchor_df.columns = [
-        f"{geo}::{ANCHOR_PER_COUNTRY[geo]}" for geo in anchor_df.columns
-    ]
+    # 4. Save raw anchor values
+    anchor_frames = []
+
+    for geo, df in anchor_data.items():
+        tmp = df.copy()
+        tmp.columns = [
+            f"{geo}::{ANCHOR_PER_COUNTRY[geo]}::{col}"
+            for col in tmp.columns
+        ]
+        anchor_frames.append(tmp)
+
+    anchor_df = pd.concat(anchor_frames, axis=1)
+
     anchor_path = OUTPUT_DIR / "trends_anchors.csv"
     anchor_df.to_csv(anchor_path)
     log.info("Anchor data → %s", anchor_path)
 
-    # 5. Save raw normalised keyword-level data with "GEO::keyword" columns
+    # 5. Save raw keyword-level data with "GEO::keyword" columns
     raw_frames = []
     for geo, df in country_data.items():
         tmp = df.copy()
@@ -284,9 +278,9 @@ def main() -> None:
         raw_frames.append(tmp)
 
     raw_all  = pd.concat(raw_frames, axis=1)
-    raw_path = OUTPUT_DIR / "trends_normalised_data.csv"
+    raw_path = OUTPUT_DIR / "trends_keywords.csv"
     raw_all.to_csv(raw_path)
-    log.info("Normalised data saved → %s", raw_path)
+    log.info("Keyword data saved → %s", raw_path)
 
     log.info("Extraction complete ✓  Next step: run trends_analysis.ipynb")
 
