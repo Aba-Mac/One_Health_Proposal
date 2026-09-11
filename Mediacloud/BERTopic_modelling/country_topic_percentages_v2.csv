@@ -1,0 +1,414 @@
+subtype,country,topic_name,n_docs,country_total,percent_of_country
+Aedes,Austria,Tiger mosquito spread and disease risk,88,304,28.94736842105263
+Aedes,Austria,Regional tiger mosquito surveillance and control,63,304,20.723684210526315
+Aedes,Austria, Zika virus public health alerts,23,304,7.565789473684211
+Aedes,Austria,Chikungunya risk in Europe,20,304,6.578947368421052
+Aedes,Austria,Climate change and health risks,20,304,6.578947368421052
+Aedes,Austria,Dengue surveillance and response,18,304,5.921052631578948
+Aedes,Austria,Invasive species and public health impacts,16,304,5.2631578947368425
+Aedes,Austria,Aedes arbovirus risk in Europe,14,304,4.605263157894737
+Aedes,Austria,Broad infectious disease risks ,12,304,3.9473684210526314
+Aedes,Austria,Chikungunya vaccine,11,304,3.6184210526315788
+Aedes,Austria,Tropical diseases reaching Europe,8,304,2.6315789473684212
+Aedes,Austria, Innovative mosquito suppression,7,304,2.3026315789473686
+Aedes,Austria,Local mosquito-control activities,3,304,0.9868421052631579
+Aedes,Austria,Citizen-based tiger mosquito prevention,1,304,0.32894736842105265
+Aedes,France,Tiger mosquito spread and disease risk,96,404,23.762376237623762
+Aedes,France,Dengue surveillance and response,72,404,17.821782178217823
+Aedes,France,Chikungunya risk in Europe,55,404,13.613861386138614
+Aedes,France,Citizen-based tiger mosquito prevention,42,404,10.396039603960396
+Aedes,France, Zika virus public health alerts,34,404,8.415841584158416
+Aedes,France,Local mosquito-control activities,27,404,6.683168316831683
+Aedes,France, Innovative mosquito suppression,18,404,4.455445544554456
+Aedes,France,Invasive species and public health impacts,14,404,3.4653465346534653
+Aedes,France,Broad infectious disease risks ,13,404,3.217821782178218
+Aedes,France,Climate change and health risks,11,404,2.722772277227723
+Aedes,France,Chikungunya vaccine,9,404,2.227722772277228
+Aedes,France,Tropical diseases reaching Europe,6,404,1.4851485148514851
+Aedes,France,Citizen reporting of tiger mosquitoes,3,404,0.7425742574257426
+Aedes,France,Aedes arbovirus risk in Europe,2,404,0.49504950495049505
+Aedes,France,Mosquito nuisance and bite prevention,1,404,0.24752475247524752
+Aedes,France,Regional tiger mosquito surveillance and control,1,404,0.24752475247524752
+Aedes,Germany,Tiger mosquito spread and disease risk,98,293,33.44709897610922
+Aedes,Germany,Mosquito nuisance and bite prevention,32,293,10.921501706484642
+Aedes,Germany, Zika virus public health alerts,27,293,9.215017064846416
+Aedes,Germany,Regional tiger mosquito surveillance and control,27,293,9.215017064846416
+Aedes,Germany,Dengue surveillance and response,24,293,8.19112627986348
+Aedes,Germany,Climate change and health risks,22,293,7.508532423208191
+Aedes,Germany,Chikungunya risk in Europe,17,293,5.802047781569966
+Aedes,Germany,Invasive species and public health impacts,14,293,4.778156996587031
+Aedes,Germany,Tropical diseases reaching Europe,14,293,4.778156996587031
+Aedes,Germany,Aedes arbovirus risk in Europe,7,293,2.3890784982935154
+Aedes,Germany,Broad infectious disease risks ,6,293,2.04778156996587
+Aedes,Germany, Innovative mosquito suppression,5,293,1.7064846416382253
+Aedes,Italy,Dengue surveillance and response,168,363,46.28099173553719
+Aedes,Italy,Local mosquito-control activities,43,363,11.845730027548209
+Aedes,Italy, Zika virus public health alerts,40,363,11.019283746556473
+Aedes,Italy,Tiger mosquito spread and disease risk,35,363,9.641873278236915
+Aedes,Italy,Chikungunya risk in Europe,19,363,5.234159779614325
+Aedes,Italy, Innovative mosquito suppression,16,363,4.40771349862259
+Aedes,Italy,Broad infectious disease risks ,13,363,3.581267217630854
+Aedes,Italy,Invasive species and public health impacts,9,363,2.479338842975207
+Aedes,Italy,Citizen-based tiger mosquito prevention,8,363,2.203856749311295
+Aedes,Italy,Climate change and health risks,5,363,1.3774104683195592
+Aedes,Italy,Aedes arbovirus risk in Europe,4,363,1.1019283746556474
+Aedes,Italy,Chikungunya vaccine,3,363,0.8264462809917356
+Aedes,Spain,Citizen-based tiger mosquito prevention,82,416,19.71153846153846
+Aedes,Spain,Tiger mosquito spread and disease risk,71,416,17.067307692307693
+Aedes,Spain, Zika virus public health alerts,68,416,16.346153846153847
+Aedes,Spain,Citizen reporting of tiger mosquitoes,45,416,10.817307692307692
+Aedes,Spain,Broad infectious disease risks ,31,416,7.451923076923077
+Aedes,Spain,Dengue surveillance and response,28,416,6.730769230769231
+Aedes,Spain,Local mosquito-control activities,26,416,6.25
+Aedes,Spain,Climate change and health risks,20,416,4.8076923076923075
+Aedes,Spain,Invasive species and public health impacts,11,416,2.644230769230769
+Aedes,Spain,Chikungunya risk in Europe,10,416,2.4038461538461537
+Aedes,Spain, Innovative mosquito suppression,7,416,1.6826923076923077
+Aedes,Spain,Aedes arbovirus risk in Europe,6,416,1.4423076923076923
+Aedes,Spain,Chikungunya vaccine,4,416,0.9615384615384616
+Aedes,Spain,Tropical diseases reaching Europe,4,416,0.9615384615384616
+Aedes,Spain,Mosquito nuisance and bite prevention,2,416,0.4807692307692308
+Aedes,Spain,Regional tiger mosquito surveillance and control,1,416,0.2403846153846154
+Aedes,Switzerland,Regional tiger mosquito surveillance and control,143,510,28.03921568627451
+Aedes,Switzerland, Zika virus public health alerts,87,510,17.058823529411764
+Aedes,Switzerland,Tiger mosquito spread and disease risk,87,510,17.058823529411764
+Aedes,Switzerland, Innovative mosquito suppression,36,510,7.0588235294117645
+Aedes,Switzerland,Invasive species and public health impacts,29,510,5.686274509803922
+Aedes,Switzerland,Climate change and health risks,26,510,5.098039215686274
+Aedes,Switzerland,Dengue surveillance and response,24,510,4.705882352941177
+Aedes,Switzerland,Chikungunya risk in Europe,20,510,3.9215686274509802
+Aedes,Switzerland,Broad infectious disease risks ,19,510,3.7254901960784315
+Aedes,Switzerland,Citizen-based tiger mosquito prevention,13,510,2.549019607843137
+Aedes,Switzerland,Local mosquito-control activities,8,510,1.5686274509803921
+Aedes,Switzerland,Tropical diseases reaching Europe,6,510,1.1764705882352942
+Aedes,Switzerland,Mosquito nuisance and bite prevention,5,510,0.9803921568627451
+Aedes,Switzerland,Chikungunya vaccine,4,510,0.7843137254901961
+Aedes,Switzerland,Aedes arbovirus risk in Europe,2,510,0.39215686274509803
+Aedes,Switzerland,Citizen reporting of tiger mosquitoes,1,510,0.19607843137254902
+Chikungunya,Austria,Chikungunya vaccine,29,117,24.786324786324787
+Chikungunya,Austria,Chikungunya risk in Europe,21,117,17.94871794871795
+Chikungunya,Austria,Tropical diseases reaching Europe,13,117,11.11111111111111
+Chikungunya,Austria, Zika virus public health alerts,9,117,7.6923076923076925
+Chikungunya,Austria,Broad infectious disease risks ,9,117,7.6923076923076925
+Chikungunya,Austria,Travel health and disease risks,8,117,6.837606837606837
+Chikungunya,Austria,Oropouche virus imported cases,7,117,5.982905982905983
+Chikungunya,Austria,Climate change and health risks,5,117,4.273504273504273
+Chikungunya,Austria,Local mosquito-control activities,5,117,4.273504273504273
+Chikungunya,Austria,Dengue surveillance and response,4,117,3.4188034188034186
+Chikungunya,Austria,Tiger mosquito spread and disease risk,3,117,2.5641025641025643
+Chikungunya,Austria,Mosquito nuisance and bite prevention,2,117,1.7094017094017093
+Chikungunya,Austria,West Nile virus outbreaks and surveillance,2,117,1.7094017094017093
+Chikungunya,France,Chikungunya risk in Europe,66,339,19.469026548672566
+Chikungunya,France,Tiger mosquito spread and disease risk,59,339,17.404129793510325
+Chikungunya,France,Dengue surveillance and response,43,339,12.684365781710914
+Chikungunya,France,Chikungunya vaccine,33,339,9.734513274336283
+Chikungunya,France,Local mosquito-control activities,30,339,8.849557522123893
+Chikungunya,France,Broad infectious disease risks ,27,339,7.964601769911504
+Chikungunya,France, Zika virus public health alerts,25,339,7.374631268436578
+Chikungunya,France,Mosquito nuisance and bite prevention,23,339,6.784660766961652
+Chikungunya,France,Climate change and health risks,12,339,3.5398230088495577
+Chikungunya,France,Tropical diseases reaching Europe,9,339,2.6548672566371683
+Chikungunya,France,Travel health and disease risks,5,339,1.4749262536873156
+Chikungunya,France,West Nile virus outbreaks and surveillance,4,339,1.1799410029498525
+Chikungunya,France,Oropouche virus imported cases,3,339,0.8849557522123894
+Chikungunya,Germany,Tropical diseases reaching Europe,85,330,25.757575757575758
+Chikungunya,Germany,Tiger mosquito spread and disease risk,58,330,17.575757575757574
+Chikungunya,Germany,Chikungunya risk in Europe,44,330,13.333333333333334
+Chikungunya,Germany,Broad infectious disease risks ,24,330,7.2727272727272725
+Chikungunya,Germany, Zika virus public health alerts,23,330,6.96969696969697
+Chikungunya,Germany,Mosquito nuisance and bite prevention,22,330,6.666666666666667
+Chikungunya,Germany,Travel health and disease risks,18,330,5.454545454545454
+Chikungunya,Germany,Oropouche virus imported cases,14,330,4.242424242424242
+Chikungunya,Germany,Chikungunya vaccine,13,330,3.9393939393939394
+Chikungunya,Germany,Dengue surveillance and response,12,330,3.6363636363636362
+Chikungunya,Germany,Climate change and health risks,8,330,2.4242424242424243
+Chikungunya,Germany,West Nile virus outbreaks and surveillance,5,330,1.5151515151515151
+Chikungunya,Germany,Local mosquito-control activities,4,330,1.2121212121212122
+Chikungunya,Italy,Chikungunya risk in Europe,166,464,35.775862068965516
+Chikungunya,Italy,West Nile virus outbreaks and surveillance,64,464,13.793103448275861
+Chikungunya,Italy,Broad infectious disease risks ,50,464,10.775862068965518
+Chikungunya,Italy,Dengue surveillance and response,48,464,10.344827586206897
+Chikungunya,Italy,Local mosquito-control activities,24,464,5.172413793103448
+Chikungunya,Italy,Mosquito nuisance and bite prevention,23,464,4.956896551724138
+Chikungunya,Italy, Zika virus public health alerts,20,464,4.310344827586207
+Chikungunya,Italy,Climate change and health risks,19,464,4.094827586206897
+Chikungunya,Italy,Oropouche virus imported cases,18,464,3.8793103448275863
+Chikungunya,Italy,Travel health and disease risks,9,464,1.9396551724137931
+Chikungunya,Italy,Chikungunya vaccine,8,464,1.7241379310344827
+Chikungunya,Italy,Tropical diseases reaching Europe,8,464,1.7241379310344827
+Chikungunya,Italy,Tiger mosquito spread and disease risk,7,464,1.5086206896551724
+Chikungunya,Spain,Local mosquito-control activities,74,467,15.845824411134904
+Chikungunya,Spain, Zika virus public health alerts,71,467,15.203426124197001
+Chikungunya,Spain,Climate change and health risks,65,467,13.9186295503212
+Chikungunya,Spain,Tiger mosquito spread and disease risk,63,467,13.490364025695932
+Chikungunya,Spain,Broad infectious disease risks ,52,467,11.13490364025696
+Chikungunya,Spain,Chikungunya risk in Europe,41,467,8.779443254817988
+Chikungunya,Spain,Mosquito nuisance and bite prevention,34,467,7.28051391862955
+Chikungunya,Spain,Dengue surveillance and response,28,467,5.995717344753747
+Chikungunya,Spain,Oropouche virus imported cases,11,467,2.355460385438972
+Chikungunya,Spain,Travel health and disease risks,10,467,2.1413276231263385
+Chikungunya,Spain,Tropical diseases reaching Europe,9,467,1.9271948608137044
+Chikungunya,Spain,West Nile virus outbreaks and surveillance,5,467,1.0706638115631693
+Chikungunya,Spain,Chikungunya vaccine,4,467,0.8565310492505354
+Chikungunya,Switzerland, Zika virus public health alerts,79,276,28.6231884057971
+Chikungunya,Switzerland,Tiger mosquito spread and disease risk,62,276,22.463768115942027
+Chikungunya,Switzerland,Chikungunya risk in Europe,35,276,12.681159420289855
+Chikungunya,Switzerland,Tropical diseases reaching Europe,18,276,6.521739130434782
+Chikungunya,Switzerland,Dengue surveillance and response,16,276,5.797101449275362
+Chikungunya,Switzerland,Climate change and health risks,12,276,4.3478260869565215
+Chikungunya,Switzerland,Chikungunya vaccine,11,276,3.9855072463768115
+Chikungunya,Switzerland,Local mosquito-control activities,11,276,3.9855072463768115
+Chikungunya,Switzerland,Broad infectious disease risks ,10,276,3.6231884057971016
+Chikungunya,Switzerland,Travel health and disease risks,9,276,3.260869565217391
+Chikungunya,Switzerland,Mosquito nuisance and bite prevention,8,276,2.898550724637681
+Chikungunya,Switzerland,West Nile virus outbreaks and surveillance,4,276,1.4492753623188406
+Chikungunya,Switzerland,Oropouche virus imported cases,1,276,0.36231884057971014
+Culex,Austria,Mosquito nuisance and bite prevention,3,4,75.0
+Culex,Austria,Aedes arbovirus risk in Europe,1,4,25.0
+Culex,France,Tiger mosquito spread and disease risk,71,231,30.735930735930737
+Culex,France,Mosquito nuisance and bite prevention,66,231,28.571428571428573
+Culex,France,West Nile virus outbreaks and surveillance,58,231,25.10822510822511
+Culex,France,Broad infectious disease risks ,19,231,8.225108225108226
+Culex,France,Local mosquito-control activities,15,231,6.4935064935064934
+Culex,France,Aedes arbovirus risk in Europe,2,231,0.8658008658008658
+Culex,Germany,Mosquito nuisance and bite prevention,179,298,60.06711409395973
+Culex,Germany, Mosquito-borne viruses in Germany,70,298,23.48993288590604
+Culex,Germany,Broad infectious disease risks ,28,298,9.395973154362416
+Culex,Germany,West Nile virus outbreaks and surveillance,9,298,3.0201342281879193
+Culex,Germany,Aedes arbovirus risk in Europe,4,298,1.342281879194631
+Culex,Germany,Local mosquito-control activities,4,298,1.342281879194631
+Culex,Germany,Tiger mosquito spread and disease risk,4,298,1.342281879194631
+Culex,Italy,West Nile virus outbreaks and surveillance,339,468,72.43589743589743
+Culex,Italy,Local mosquito-control activities,47,468,10.042735042735043
+Culex,Italy,Mosquito nuisance and bite prevention,43,468,9.188034188034187
+Culex,Italy,Broad infectious disease risks ,19,468,4.05982905982906
+Culex,Italy,Aedes arbovirus risk in Europe,17,468,3.6324786324786325
+Culex,Italy, Mosquito-borne viruses in Germany,2,468,0.42735042735042733
+Culex,Italy,Tiger mosquito spread and disease risk,1,468,0.21367521367521367
+Culex,Spain,West Nile virus outbreaks and surveillance,208,539,38.5899814471243
+Culex,Spain,Local mosquito-control activities,202,539,37.47680890538033
+Culex,Spain,Mosquito nuisance and bite prevention,79,539,14.656771799628942
+Culex,Spain,Aedes arbovirus risk in Europe,25,539,4.638218923933209
+Culex,Spain,Broad infectious disease risks ,24,539,4.452690166975882
+Culex,Spain,Tiger mosquito spread and disease risk,1,539,0.18552875695732837
+Culex,Switzerland,Mosquito nuisance and bite prevention,4,6,66.66666666666667
+Culex,Switzerland, Mosquito-borne viruses in Germany,2,6,33.333333333333336
+Dengue,Austria,Climate change and health risks,61,266,22.93233082706767
+Dengue,Austria,Global dengue outbreaks and epidemics,47,266,17.669172932330827
+Dengue,Austria,Broad infectious disease risks ,32,266,12.030075187969924
+Dengue,Austria,Tiger mosquito spread and disease risk,32,266,12.030075187969924
+Dengue,Austria, Zika virus public health alerts,27,266,10.150375939849624
+Dengue,Austria,Dengue surveillance and response,17,266,6.390977443609023
+Dengue,Austria,Dengue vaccine ,15,266,5.639097744360902
+Dengue,Austria,Vector-borne disease readiness,14,266,5.2631578947368425
+Dengue,Austria,Mosquito-borne disease surveillance,13,266,4.887218045112782
+Dengue,Austria,Travel health and disease risks,6,266,2.255639097744361
+Dengue,Austria,Bearded vulture conservation and threats,2,266,0.7518796992481203
+Dengue,France,Tiger mosquito spread and disease risk,125,351,35.61253561253561
+Dengue,France,Dengue surveillance and response,72,351,20.512820512820515
+Dengue,France, Zika virus public health alerts,48,351,13.675213675213675
+Dengue,France,Climate change and health risks,44,351,12.535612535612536
+Dengue,France,Broad infectious disease risks ,16,351,4.5584045584045585
+Dengue,France,Global dengue outbreaks and epidemics,14,351,3.988603988603989
+Dengue,France,Mosquito-borne disease surveillance,10,351,2.849002849002849
+Dengue,France,Vector-borne disease readiness,9,351,2.5641025641025643
+Dengue,France,Dengue vaccine ,7,351,1.9943019943019944
+Dengue,France,Travel health and disease risks,4,351,1.1396011396011396
+Dengue,France,Bearded vulture conservation and threats,2,351,0.5698005698005698
+Dengue,Germany,Tiger mosquito spread and disease risk,80,298,26.845637583892618
+Dengue,Germany, Zika virus public health alerts,44,298,14.765100671140939
+Dengue,Germany,Climate change and health risks,41,298,13.758389261744966
+Dengue,Germany,Dengue surveillance and response,32,298,10.738255033557047
+Dengue,Germany,Global dengue outbreaks and epidemics,32,298,10.738255033557047
+Dengue,Germany,Broad infectious disease risks ,30,298,10.06711409395973
+Dengue,Germany,Travel health and disease risks,17,298,5.704697986577181
+Dengue,Germany,Mosquito-borne disease surveillance,8,298,2.684563758389262
+Dengue,Germany,Dengue vaccine ,6,298,2.0134228187919465
+Dengue,Germany,Vector-borne disease readiness,6,298,2.0134228187919465
+Dengue,Germany,Bearded vulture conservation and threats,2,298,0.6711409395973155
+Dengue,Italy,Dengue surveillance and response,169,348,48.5632183908046
+Dengue,Italy,Tiger mosquito spread and disease risk,36,348,10.344827586206897
+Dengue,Italy,Mosquito-borne disease surveillance,30,348,8.620689655172415
+Dengue,Italy,Broad infectious disease risks ,29,348,8.333333333333334
+Dengue,Italy,Climate change and health risks,25,348,7.183908045977011
+Dengue,Italy,Global dengue outbreaks and epidemics,20,348,5.747126436781609
+Dengue,Italy,Vector-borne disease readiness,18,348,5.172413793103448
+Dengue,Italy, Zika virus public health alerts,11,348,3.160919540229885
+Dengue,Italy,Dengue vaccine ,7,348,2.0114942528735633
+Dengue,Italy,Bearded vulture conservation and threats,3,348,0.8620689655172413
+Dengue,Spain,Bearded vulture conservation and threats,136,432,31.48148148148148
+Dengue,Spain,Tiger mosquito spread and disease risk,72,432,16.666666666666668
+Dengue,Spain,Climate change and health risks,57,432,13.194444444444445
+Dengue,Spain,Dengue surveillance and response,38,432,8.796296296296296
+Dengue,Spain, Zika virus public health alerts,34,432,7.87037037037037
+Dengue,Spain,Broad infectious disease risks ,30,432,6.944444444444445
+Dengue,Spain,Vector-borne disease readiness,22,432,5.092592592592593
+Dengue,Spain,Global dengue outbreaks and epidemics,18,432,4.166666666666667
+Dengue,Spain,Mosquito-borne disease surveillance,12,432,2.7777777777777777
+Dengue,Spain,Travel health and disease risks,10,432,2.314814814814815
+Dengue,Spain,Dengue vaccine ,3,432,0.6944444444444444
+Dengue,Switzerland,Climate change and health risks,61,376,16.22340425531915
+Dengue,Switzerland,Travel health and disease risks,60,376,15.957446808510639
+Dengue,Switzerland,Tiger mosquito spread and disease risk,58,376,15.425531914893616
+Dengue,Switzerland, Zika virus public health alerts,55,376,14.627659574468085
+Dengue,Switzerland,Global dengue outbreaks and epidemics,51,376,13.563829787234043
+Dengue,Switzerland,Dengue surveillance and response,29,376,7.712765957446808
+Dengue,Switzerland,Dengue vaccine ,25,376,6.648936170212766
+Dengue,Switzerland,Broad infectious disease risks ,19,376,5.053191489361702
+Dengue,Switzerland,Mosquito-borne disease surveillance,9,376,2.393617021276596
+Dengue,Switzerland,Vector-borne disease readiness,9,376,2.393617021276596
+Usutu,Austria,Bird mortality and citizen reporting,30,32,93.75
+Usutu,Austria,Broad infectious disease risks ,1,32,3.125
+Usutu,Austria,Tropical diseases reaching Europe,1,32,3.125
+Usutu,France,Mosquito-borne disease surveillance,25,44,56.81818181818182
+Usutu,France,Bird mortality and citizen reporting,12,44,27.272727272727273
+Usutu,France,West Nile virus outbreaks and surveillance,4,44,9.090909090909092
+Usutu,France,Broad infectious disease risks ,1,44,2.272727272727273
+Usutu,France,Mosquito-borne viruses in Germany,1,44,2.272727272727273
+Usutu,France,Tropical diseases reaching Europe,1,44,2.272727272727273
+Usutu,Germany,Bird mortality and citizen reporting,212,264,80.3030303030303
+Usutu,Germany,West Nile virus outbreaks and surveillance,29,264,10.984848484848484
+Usutu,Germany,Mosquito-borne viruses in Germany,17,264,6.4393939393939394
+Usutu,Germany,Mosquito-borne disease surveillance,4,264,1.5151515151515151
+Usutu,Germany,Broad infectious disease risks ,1,264,0.3787878787878788
+Usutu,Germany,Tropical diseases reaching Europe,1,264,0.3787878787878788
+Usutu,Italy,West Nile virus outbreaks and surveillance,29,61,47.540983606557376
+Usutu,Italy,Mosquito-borne disease surveillance,28,61,45.90163934426229
+Usutu,Italy,Broad infectious disease risks ,3,61,4.918032786885246
+Usutu,Italy,Bird mortality and citizen reporting,1,61,1.639344262295082
+Usutu,Spain,Transfusion safety,29,85,34.11764705882353
+Usutu,Spain,Tropical diseases reaching Europe,28,85,32.94117647058823
+Usutu,Spain,Mosquito-borne disease surveillance,11,85,12.941176470588236
+Usutu,Spain,Broad infectious disease risks ,10,85,11.764705882352942
+Usutu,Spain,Bird mortality and citizen reporting,3,85,3.5294117647058822
+Usutu,Spain,West Nile virus outbreaks and surveillance,3,85,3.5294117647058822
+Usutu,Spain,Mosquito-borne viruses in Germany,1,85,1.1764705882352942
+Usutu,Switzerland,Bird mortality and citizen reporting,19,19,100.0
+West Nile,Austria,West Nile virus outbreaks and surveillance,65,167,38.92215568862275
+West Nile,Austria,Mosquito-borne viruses in Germany,24,167,14.37125748502994
+West Nile,Austria,Tropical diseases reaching Europe,18,167,10.778443113772456
+West Nile,Austria,Transfusion safety,16,167,9.580838323353293
+West Nile,Austria,Broad infectious disease risks ,14,167,8.383233532934131
+West Nile,Austria,Mosquito nuisance and bite prevention,14,167,8.383233532934131
+West Nile,Austria,Climate change and health risks,13,167,7.7844311377245505
+West Nile,Austria,Mosquito-borne disease surveillance,3,167,1.7964071856287425
+West Nile,France,Mosquito-borne disease surveillance,98,356,27.528089887640448
+West Nile,France,West Nile virus outbreaks and surveillance,86,356,24.15730337078652
+West Nile,France,Broad infectious disease risks ,68,356,19.10112359550562
+West Nile,France,Mosquito nuisance and bite prevention,39,356,10.955056179775282
+West Nile,France,Climate change and health risks,23,356,6.46067415730337
+West Nile,France,Transfusion safety,20,356,5.617977528089888
+West Nile,France,Tropical diseases reaching Europe,13,356,3.651685393258427
+West Nile,France,West Nile governance and mosquito control ,9,356,2.5280898876404496
+West Nile,Germany,Mosquito-borne viruses in Germany,108,244,44.26229508196721
+West Nile,Germany,West Nile virus outbreaks and surveillance,38,244,15.573770491803279
+West Nile,Germany,Tropical diseases reaching Europe,37,244,15.163934426229508
+West Nile,Germany,Mosquito nuisance and bite prevention,36,244,14.754098360655737
+West Nile,Germany,Climate change and health risks,8,244,3.278688524590164
+West Nile,Germany,Broad infectious disease risks ,6,244,2.459016393442623
+West Nile,Germany,Mosquito-borne disease surveillance,6,244,2.459016393442623
+West Nile,Germany,Transfusion safety,5,244,2.0491803278688523
+West Nile,Italy,West Nile virus outbreaks and surveillance,184,275,66.9090909090909
+West Nile,Italy,Broad infectious disease risks ,23,275,8.363636363636363
+West Nile,Italy,Mosquito-borne disease surveillance,21,275,7.636363636363637
+West Nile,Italy,Climate change and health risks,14,275,5.090909090909091
+West Nile,Italy,Transfusion safety,11,275,4.0
+West Nile,Italy,Tropical diseases reaching Europe,11,275,4.0
+West Nile,Italy,Mosquito nuisance and bite prevention,9,275,3.272727272727273
+West Nile,Italy,West Nile governance and mosquito control ,2,275,0.7272727272727273
+West Nile,Spain,West Nile virus outbreaks and surveillance,365,605,60.33057851239669
+West Nile,Spain,West Nile governance and mosquito control ,70,605,11.570247933884298
+West Nile,Spain,Broad infectious disease risks ,50,605,8.264462809917354
+West Nile,Spain,Climate change and health risks,43,605,7.107438016528926
+West Nile,Spain,Mosquito nuisance and bite prevention,36,605,5.950413223140496
+West Nile,Spain,Mosquito-borne disease surveillance,29,605,4.793388429752066
+West Nile,Spain,Tropical diseases reaching Europe,11,605,1.8181818181818181
+West Nile,Spain,Transfusion safety,1,605,0.1652892561983471
+West Nile,Switzerland,West Nile virus outbreaks and surveillance,28,81,34.5679012345679
+West Nile,Switzerland,Mosquito-borne viruses in Germany,17,81,20.987654320987655
+West Nile,Switzerland,Transfusion safety,14,81,17.28395061728395
+West Nile,Switzerland,Broad infectious disease risks ,6,81,7.407407407407407
+West Nile,Switzerland,Mosquito-borne disease surveillance,5,81,6.172839506172839
+West Nile,Switzerland,Climate change and health risks,4,81,4.938271604938271
+West Nile,Switzerland,Tropical diseases reaching Europe,4,81,4.938271604938271
+West Nile,Switzerland,Mosquito nuisance and bite prevention,3,81,3.7037037037037037
+Zika,Austria, Zika virus public health alerts,157,360,43.611111111111114
+Zika,Austria,Zika virus public health alerts,109,360,30.27777777777778
+Zika,Austria,Broad infectious disease risks ,60,360,16.666666666666668
+Zika,Austria,Zika vaccine,12,360,3.3333333333333335
+Zika,Austria,Zika biomedical research advances,11,360,3.0555555555555554
+Zika,Austria,Tiger mosquito spread and disease risk,6,360,1.6666666666666667
+Zika,Austria,Climate change and health risks,3,360,0.8333333333333334
+Zika,Austria,Aedes arbovirus risk in Europe,2,360,0.5555555555555556
+Zika,France,Zika virus public health alerts,79,341,23.167155425219942
+Zika,France, Zika virus public health alerts,76,341,22.287390029325515
+Zika,France,Tiger mosquito spread and disease risk,65,341,19.06158357771261
+Zika,France,Broad infectious disease risks ,61,341,17.88856304985337
+Zika,France,Aedes arbovirus risk in Europe,22,341,6.451612903225806
+Zika,France,Zika biomedical research advances,20,341,5.865102639296188
+Zika,France,Climate change and health risks,14,341,4.105571847507331
+Zika,France,Zika vaccine,4,341,1.1730205278592376
+Zika,Germany, Zika virus public health alerts,106,371,28.571428571428573
+Zika,Germany,Zika virus public health alerts,106,371,28.571428571428573
+Zika,Germany,Broad infectious disease risks ,61,371,16.442048517520217
+Zika,Germany,Tiger mosquito spread and disease risk,43,371,11.590296495956874
+Zika,Germany,Climate change and health risks,20,371,5.390835579514825
+Zika,Germany,Aedes arbovirus risk in Europe,16,371,4.3126684636118595
+Zika,Germany,Zika biomedical research advances,12,371,3.234501347708895
+Zika,Germany,Zika vaccine,7,371,1.8867924528301887
+Zika,Italy,Zika virus public health alerts,72,276,26.08695652173913
+Zika,Italy, Zika virus public health alerts,71,276,25.72463768115942
+Zika,Italy,Broad infectious disease risks ,55,276,19.92753623188406
+Zika,Italy,Aedes arbovirus risk in Europe,26,276,9.420289855072463
+Zika,Italy,Zika vaccine,16,276,5.797101449275362
+Zika,Italy,Tiger mosquito spread and disease risk,14,276,5.072463768115942
+Zika,Italy,Zika biomedical research advances,13,276,4.7101449275362315
+Zika,Italy,Climate change and health risks,9,276,3.260869565217391
+Zika,Spain,Zika virus public health alerts,334,665,50.225563909774436
+Zika,Spain,Broad infectious disease risks ,104,665,15.639097744360901
+Zika,Spain, Zika virus public health alerts,82,665,12.330827067669173
+Zika,Spain,Tiger mosquito spread and disease risk,80,665,12.030075187969924
+Zika,Spain,Aedes arbovirus risk in Europe,21,665,3.1578947368421053
+Zika,Spain,Zika vaccine,17,665,2.556390977443609
+Zika,Spain,Climate change and health risks,16,665,2.406015037593985
+Zika,Spain,Zika biomedical research advances,11,665,1.6541353383458646
+Zika,Switzerland,Zika virus public health alerts,215,420,51.19047619047619
+Zika,Switzerland, Zika virus public health alerts,82,420,19.523809523809526
+Zika,Switzerland,Broad infectious disease risks ,46,420,10.952380952380953
+Zika,Switzerland,Zika biomedical research advances,44,420,10.476190476190476
+Zika,Switzerland,Zika vaccine,14,420,3.3333333333333335
+Zika,Switzerland,Climate change and health risks,12,420,2.857142857142857
+Zika,Switzerland,Tiger mosquito spread and disease risk,5,420,1.1904761904761905
+Zika,Switzerland,Aedes arbovirus risk in Europe,2,420,0.47619047619047616
+anchor,Austria,Malaria burden and control,40,88,45.45454545454545
+anchor,Austria,Mosquito nuisance and bite prevention,37,88,42.04545454545455
+anchor,Austria,West Nile virus outbreaks and surveillance,7,88,7.954545454545454
+anchor,Austria,Bluetongue and livestock disease,2,88,2.272727272727273
+anchor,Austria,Tiger mosquito spread and disease risk,2,88,2.272727272727273
+anchor,France,Aedes arbovirus risk in Europe,101,238,42.436974789915965
+anchor,France,Mosquito nuisance and bite prevention,43,238,18.067226890756302
+anchor,France,Tiger mosquito spread and disease risk,39,238,16.386554621848738
+anchor,France,Malaria burden and control,26,238,10.92436974789916
+anchor,France,West Nile virus outbreaks and surveillance,19,238,7.983193277310924
+anchor,France,Bluetongue and livestock disease,10,238,4.201680672268908
+anchor,Germany,Malaria burden and control,39,75,52.0
+anchor,Germany,Mosquito nuisance and bite prevention,20,75,26.666666666666668
+anchor,Germany,Aedes arbovirus risk in Europe,6,75,8.0
+anchor,Germany,West Nile virus outbreaks and surveillance,6,75,8.0
+anchor,Germany,Tiger mosquito spread and disease risk,4,75,5.333333333333333
+anchor,Italy,West Nile virus outbreaks and surveillance,46,75,61.333333333333336
+anchor,Italy,Aedes arbovirus risk in Europe,25,75,33.333333333333336
+anchor,Italy,Tiger mosquito spread and disease risk,2,75,2.6666666666666665
+anchor,Italy,Malaria burden and control,1,75,1.3333333333333333
+anchor,Italy,Mosquito nuisance and bite prevention,1,75,1.3333333333333333
+anchor,Spain,West Nile virus outbreaks and surveillance,181,333,54.354354354354356
+anchor,Spain,Bluetongue and livestock disease,83,333,24.924924924924923
+anchor,Spain,Mosquito nuisance and bite prevention,34,333,10.21021021021021
+anchor,Spain,Aedes arbovirus risk in Europe,22,333,6.606606606606607
+anchor,Spain,Tiger mosquito spread and disease risk,7,333,2.1021021021021022
+anchor,Spain,Malaria burden and control,6,333,1.8018018018018018
+anchor,Switzerland,Malaria burden and control,75,140,53.57142857142857
+anchor,Switzerland,Mosquito nuisance and bite prevention,32,140,22.857142857142858
+anchor,Switzerland,West Nile virus outbreaks and surveillance,19,140,13.571428571428571
+anchor,Switzerland,Tiger mosquito spread and disease risk,11,140,7.857142857142857
+anchor,Switzerland,Aedes arbovirus risk in Europe,3,140,2.142857142857143
